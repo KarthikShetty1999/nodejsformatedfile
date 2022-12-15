@@ -3,6 +3,7 @@ const dotenv = require('dotenv').config();
 const bcrypt = require("bcryptjs");
 mongoose.connect(process.env.MONGODB_URI+process.env.USER_NAME,{useNewUrlParser:true, useUnifiedTopology:true});
 const userSchema = mongoose.Schema({
+    
     name : {
         type : String,
         required : true
